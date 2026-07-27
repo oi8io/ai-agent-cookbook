@@ -36,16 +36,19 @@
 5. 第 1 章内容已合并到 notebook：
    `chapters/01-agent-engineer-intro/notebooks/01-agent-engineer-intro.ipynb`
 6. 第 1 章包含：
-   - AI Agent 工程师定义
-   - 核心技能
-   - Agent 系统组成
-   - 常见系统类型
-   - 研发周报助手案例
-   - 学习顺序
+   - AI Agent 工程全景图（主运行链、Harness 边界、框架与供给生态）
+   - Tokenization、LLM、RAG、Skills、MCP、CLI、Agent Loop 和 Harness 的职责边界
+   - 模型、框架、协议、平台、算力、完整 Coding Agent 和多模态能力的七层分类
+   - 20 余个代表性 Agent 框架 / SDK 的分类索引：图与状态、类型化 SDK、RAG / Pipeline、多 Agent、厂商 ADK、TypeScript 和长期记忆
+   - LangGraph、CrewAI、AutoGen、AG2 与 Microsoft Agent Framework 的定位和演进说明
+   - Claude Code、Codex、OpenCode 等 Coding Agent 产品的共同骨架
+   - Hugging Face、阿里云百炼、火山方舟、GLM 开放平台、AutoDL、可灵和 GigaTok 的生态定位
+   - 常见系统类型、工程师能力结构和课程章节导航
    - minimal planner 代码实验
+   - Planner 失败模式与 Agent 工程边界
    - 上线检查项
    - 常见误区
-   - 本章要点
+   - 顺序引用和参考文献
 7. 更新文档：
    - `README.md`
    - `docs/roadmap.md`
@@ -326,6 +329,19 @@
       设置为 `1` 时才调用本机 Ollama，且调用失败时不会静默降级。
     - 发布文件未发现真实 API Key；`.env`、IDE 配置、Notebook checkpoint、PyCharm 支持库和
       嵌套 Git 元数据均已排除。
+83. 第 1 章 AI Agent 工程全景已重构（2026-07-27）：总览 PNG 提升为 6400×4480，
+    同时提供可缩放 SVG、6400×2540 主运行链放大图和 5333×1760 框架与供给生态放大图；
+    覆盖 Tokenization、LLM、RAG、Skills、Loop、Harness、MCP、CLI、AutoGen、LangGraph、
+    CrewAI、Hugging Face、GigaTok、豆包、可灵、GLM、百炼、Claude Code、Codex、OpenCode、
+    AutoDL 等概念与产品；框架区扩展为 Python / 数据与状态、厂商 SDK / 通用编排、
+    多 Agent / TypeScript / 专项三组，并按运行主链和生态层级建立关系。
+84. 第 1 章共 28 个单元（23 MD + 5 CODE），cell ID 合法且唯一；5 个代码单元已顺序执行，
+    0 个异常，全部断言通过；参考文献编号 `[1]` 至 `[35]` 连续，全景图通过 Archify
+    `single_svg`、`finite_svg`、`orthogonal_arrows` 和 `legend_clearance` 检查。
+85. 第 1 章课程导航已与 `README.md` 和 `docs/roadmap.md` 对齐（2026-07-27）：完整列出
+    01 至 14 章的正式标题，明确第 13 章闭合核心依赖、第 14 章为独立行业扩展；Agent 框架索引
+    补充 OpenAI Agents SDK、Claude Agent SDK、Google ADK、Strands、LlamaIndex、Haystack、
+    smolagents、Agno、BeeAI、CAMEL、Mastra、Vercel AI SDK、Letta、Langroid、MetaGPT 等项目。
 
 ## 章节状态
 
