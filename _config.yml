@@ -25,6 +25,9 @@ launch_buttons:
   notebook_interface: jupyterlab
   colab_url: "https://colab.research.google.com"
   binderhub_url: ""
+  # 禁用 thebe 在线执行内核：避免 sphinx-thebe 重复注入脚本
+  # （Jupyter Book 1.x + Sphinx 7.4 组合会导致 THEBE_JS_URL 重复声明报错）
+  thebe: false
 
 # 执行策略：off = 只渲染 notebook 已保存的输出，构建不执行任何代码。
 # 所有 notebook 发布版均在 RUN_LIVE_*=0 下顺序执行并保存了离线输出，
@@ -40,9 +43,21 @@ repository:
 
 # Sphinx 扩展与配置
 sphinx:
-  extra_extensions:
-    - sphinxcontrib.mermaid
   config:
+    # 显式声明完整扩展列表：替换默认列表（默认含 sphinx_thebe，
+    # 该扩展与 sphinx-book-theme 组合会重复注入 THEBE_JS_URL 导致
+    # "Identifier 'THEBE_JS_URL' has already been declared" 报错）
+    extensions:
+      - sphinx_togglebutton
+      - sphinx_copybutton
+      - myst_nb
+      - jupyter_book
+      - sphinx_comments
+      - sphinx_external_toc
+      - sphinx.ext.intersphinx
+      - sphinx_design
+      - sphinx_book_theme
+      - sphinxcontrib.mermaid
     mermaid_version: "10.9.1"
     # 将 notebook 中的 ```mermaid 代码块渲染为 Mermaid 图
     myst_fence_as_directive:
