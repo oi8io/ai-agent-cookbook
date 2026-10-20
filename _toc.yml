@@ -1,36 +1,22 @@
 # -----------------------------------------------------------------------------
 # Jupyter Book 目录 —— 与 docs/roadmap.md 的章节表保持一致
 # root 为导航首页；chapters 顺序对应课程主线 01 → 14
-# title 字段覆盖导航与页面标题（去副标题，统一带编号），不修改 notebook 源
+# 不设置 title 覆盖：章节标题直接读取 notebook 源文件的一级标题
 # -----------------------------------------------------------------------------
 format: jb-book
 root: index
 chapters:
   - file: chapters/01-agent-engineer-intro/notebooks/01-agent-engineer-intro
-    title: 01 AI Agent 工程全景
   - file: chapters/02-llm-basics/notebooks/02-llm-basics
-    title: 02 LLM 初识
   - file: chapters/03-prompt-engineering/notebooks/03-prompt-engineering
-    title: 03 面向产研协作助手 V0 的提示词工程
   - file: chapters/04-tool-calling/notebooks/04-tool-calling
-    title: 04 Function Calling
   - file: chapters/05-mcp/notebooks/05-mcp
-    title: 05 MCP
   - file: chapters/06-rag/notebooks/06-rag
-    title: 06 RAG 知识库工程
   - file: chapters/07-context-memory/notebooks/07-context-memory
-    title: 07 上下文工程
   - file: chapters/08-agent-loop/notebooks/08-agent-loop
-    title: 08 Agent Loop
   - file: chapters/09-agent-skills-cli/notebooks/09-agent-skills-cli
-    title: 09 Agent Skills 与 Agent-facing CLI
   - file: chapters/10-harness-engineering/notebooks/10-harness-engineering
-    title: 10 Agent Harness Engineering
   - file: chapters/11-frameworks/notebooks/11-frameworks
-    title: 11 Agent Frameworks
   - file: chapters/12-evals-guardrails/notebooks/12-evals-guardrails
-    title: 12 生产控制
   - file: chapters/13-capstone/notebooks/13-capstone
-    title: 13 Capstone
   - file: chapters/14-industry-cases/notebooks/14-industry-cases
-    title: 14 行业 Agent 落地

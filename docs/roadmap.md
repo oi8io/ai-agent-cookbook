@@ -38,20 +38,20 @@
 
 | 章节 | 学习主题 | 主要学习结果 | 与最终项目的关系 |
 | --- | --- | --- | --- |
-| 01 | AI Agent 工程师导论 | 建立技能地图和系统全景 | 认识 Capstone 的组成部分 |
-| 02 | LLM 基础 | 理解 token、Attention、训练和生成 | 理解 Agent 的模型基础 |
-| 03 | Prompt | 掌握指令、上下文、结构化输出和评测 | 用于项目输入输出协议 |
-| 04 | Tool Calling | 理解工具描述、模型选择、应用执行和结果回传 | 用于查询和操作业务系统 |
+| 01 | AI Agent 工程全景 | 建立技能地图和系统全景 | 认识 Capstone 的组成部分 |
+| 02 | LLM 初识 | 理解 token、Attention、训练和生成 | 理解 Agent 的模型基础 |
+| 03 | 面向产研协作助手 V0 的提示词工程 | 掌握指令、上下文、结构化输出和评测 | 用于项目输入输出协议 |
+| 04 | Function Calling | 理解工具描述、模型选择、应用执行和结果回传 | 用于查询和操作业务系统 |
 | 05 | MCP | 理解 Host、Client、Server、Tool、Resource 和 Prompt | 用于标准化连接外部能力 |
-| 06 | RAG | 理解 ingestion、chunk、embedding、检索、rerank 和引用 | 用于读取项目知识 |
-| 07 | Context / Memory | 理解短期上下文、压缩、状态和长期记忆 | 用于保存项目决策和未完成事项 |
-| 08 | Planning | 理解 plan-act-observe、状态机、重试和停止条件 | 用于执行多步骤协作任务 |
-| 09 | Agent Skills / Agent-facing CLI | 理解可复用工作流、Agent 执行接口、认证授权和 Web/API 到 CLI 的改造 | 为项目提供稳定、可审计的业务操作面 |
-| 10 | Harness Engineering | 理解模型外部的运行环境、工具、权限、状态、恢复和反馈回路 | 为项目建立可靠的 Agent 运行时 |
+| 06 | RAG 知识库工程 | 理解 ingestion、chunk、embedding、检索、rerank 和引用 | 用于读取项目知识 |
+| 07 | 上下文工程 | 理解短期上下文、压缩、状态和长期记忆 | 用于保存项目决策和未完成事项 |
+| 08 | Agent Loop | 理解 plan-act-observe、状态机、重试和停止条件 | 用于执行多步骤协作任务 |
+| 09 | Agent Skills 与 Agent-facing CLI | 理解可复用工作流、Agent 执行接口、认证授权和 Web/API 到 CLI 的改造 | 为项目提供稳定、可审计的业务操作面 |
+| 10 | Agent Harness Engineering | 理解模型外部的运行环境、工具、权限、状态、恢复和反馈回路 | 为项目建立可靠的 Agent 运行时 |
 | 11 | Agent Frameworks | 理解框架内核，并比较 PydanticAI、LangGraph、Microsoft Agent Framework | 为项目选择实现框架 |
-| 12 | Evals / Tracing / Guardrails | 掌握评测、追踪、权限、注入防护和人审 | 为项目建立生产控制 |
+| 12 | 生产控制 | 掌握评测、追踪、权限、注入防护和人审 | 为项目建立生产控制 |
 | 13 | Capstone | 组合全部技术实现产研协作助手 | 完整项目交付 |
-| 14 | 行业 Agent 落地扩展 | 掌握行业选型、技术分工、数据闭环、风险分级和上线阶梯 | 独立扩展，不作为核心课程依赖 |
+| 14 | 行业 Agent 落地 | 掌握行业选型、技术分工、数据闭环、风险分级和上线阶梯 | 独立扩展，不作为核心课程依赖 |
 
 ## 5. 第四章案例策略
 
