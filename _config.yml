@@ -1,0 +1,70 @@
+# -----------------------------------------------------------------------------
+# Jupyter Book 配置 —— AI Agent Engineering Cookbook
+# 构建命令：jupyter-book build .
+# 产物目录：_build/html（已被 .gitignore 排除，仅用于部署）
+# 注意：notebook 是唯一正文事实源（AGENTS.md Contract 1），本文件只负责渲染与导航。
+# -----------------------------------------------------------------------------
+
+title: AI Agent Engineering Cookbook
+author: oi8io
+copyright: "2026"
+description: >-
+  以 Notebook 为阅读入口的 AI Agent 工程教程：从基础原理到生产级智能体系统。
+
+# 站点对外 URL（GitHub Pages）
+html:
+  baseurl: https://oi8io.github.io/ai-agent-cookbook/
+  home_page_in_navbar: false
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: true
+  extra_navbar: Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+
+# 页面顶部的 Launch / Colab 按钮
+launch_buttons:
+  notebook_interface: jupyterlab
+  colab_url: "https://colab.research.google.com"
+  binderhub_url: ""
+
+# 执行策略：off = 只渲染 notebook 已保存的输出，构建不执行任何代码。
+# 所有 notebook 发布版均在 RUN_LIVE_*=0 下顺序执行并保存了离线输出，
+# 因此 off 可保证构建零 API 调用、零外部依赖、快且可复现。
+execute:
+  execute_notebooks: off
+  allow_errors: false
+
+# 与 GitHub 仓库的关联（页脚 / 编辑按钮 / 问题反馈）
+repository:
+  url: https://github.com/oi8io/ai-agent-cookbook
+  path_to_book: ""
+
+# Sphinx 扩展与配置
+sphinx:
+  extra_extensions:
+    - sphinxcontrib.mermaid
+  config:
+    mermaid_version: "10.9.1"
+    # 将 notebook 中的 ```mermaid 代码块渲染为 Mermaid 图
+    myst_fence_as_directive:
+      - mermaid
+    # 限定源范围：只渲染 book 内容（index + chapters/*/notebooks），
+    # 排除虚拟环境、依赖目录、项目文档、草稿与构建产物。
+    exclude_patterns:
+      - "_build/*"
+      - ".venv/*"
+      - ".baoyu-skills/*"
+      - "node_modules/*"
+      - "blog-articles/*"
+      - "datasets/*"
+      - "docs/*"
+      - "scripts/*"
+      - "AGENTS.md"
+      - "AGENTS.reviewer-draft.md"
+      - "README.md"
+      - "main.py"
+      - "chapters/*-pycharm-support-libs/*"
+      - "chapters/*/notes.md"
+      - "chapters/*/examples/*"
+      - "chapters/*/tests/*"
+      - "chapters/*/notebooks/imgs/*.md"
+      - "chapters/*/notebooks/imgs/**/*.md"
