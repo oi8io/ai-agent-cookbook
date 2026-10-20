@@ -49,20 +49,20 @@ uv run jupyter lab
 
 | 章节 | 主题 | 状态 |
 | --- | --- | --- |
-| 01 | [AI Agent 工程师导论](chapters/01-agent-engineer-intro/notebooks/01-agent-engineer-intro) | 草稿 |
-| 02 | [LLM 初识：Transformer、Attention 与生成机制](chapters/02-llm-basics/notebooks/02-llm-basics) | 草稿 |
-| 03 | [提示词工程与结构化输出](chapters/03-prompt-engineering/notebooks/03-prompt-engineering) | 已完成待复查 |
-| 04 | [Function Calling / Tool Use](chapters/04-tool-calling/notebooks/04-tool-calling) | 技术教程已完成 |
-| 05 | [MCP：Agent 连接外部世界的协议](chapters/05-mcp/notebooks/05-mcp) | 技术教程已完成 |
+| 01 | [AI Agent 工程全景](chapters/01-agent-engineer-intro/notebooks/01-agent-engineer-intro) | 草稿 |
+| 02 | [LLM 初识](chapters/02-llm-basics/notebooks/02-llm-basics) | 草稿 |
+| 03 | [面向产研协作助手 V0 的提示词工程](chapters/03-prompt-engineering/notebooks/03-prompt-engineering) | 已完成待复查 |
+| 04 | [Function Calling](chapters/04-tool-calling/notebooks/04-tool-calling) | 技术教程已完成 |
+| 05 | [MCP](chapters/05-mcp/notebooks/05-mcp) | 技术教程已完成 |
 | 06 | [RAG 知识库工程](chapters/06-rag/notebooks/06-rag) | 技术教程已完成 |
-| 07 | [上下文工程：长对话、记忆、压缩与状态](chapters/07-context-memory/notebooks/07-context-memory) | 技术教程已完成 |
-| 08 | [Agent Planning 与执行循环](chapters/08-agent-loop/notebooks/08-agent-loop) | 技术教程已完成 |
+| 07 | [上下文工程](chapters/07-context-memory/notebooks/07-context-memory) | 技术教程已完成 |
+| 08 | [Agent Loop](chapters/08-agent-loop/notebooks/08-agent-loop) | 技术教程已完成 |
 | 09 | [Agent Skills 与 Agent-facing CLI](chapters/09-agent-skills-cli/notebooks/09-agent-skills-cli) | 技术教程已完成 |
 | 10 | [Agent Harness Engineering](chapters/10-harness-engineering/notebooks/10-harness-engineering) | 技术教程已完成 |
-| 11 | [Agent Frameworks：PydanticAI、LangGraph 与 Microsoft Agent Framework](chapters/11-frameworks/notebooks/11-frameworks) | 技术教程已完成 |
-| 12 | [生产控制：让不确定的 Agent 可测量、可约束、可追责](chapters/12-evals-guardrails/notebooks/12-evals-guardrails) | 按新规范完成 |
-| 13 | [Capstone：完整产研协作助手](chapters/13-capstone/notebooks/13-capstone) | 提纲 |
-| 14 | [行业案例扩展](chapters/14-industry-cases/notebooks/14-industry-cases) | 扩展教程已完成 |
+| 11 | [Agent Frameworks](chapters/11-frameworks/notebooks/11-frameworks) | 技术教程已完成 |
+| 12 | [生产控制](chapters/12-evals-guardrails/notebooks/12-evals-guardrails) | 按新规范完成 |
+| 13 | [Capstone](chapters/13-capstone/notebooks/13-capstone) | 提纲 |
+| 14 | [行业 Agent 落地](chapters/14-industry-cases/notebooks/14-industry-cases) | 扩展教程已完成 |
 
 ## 仓库与文档
 
